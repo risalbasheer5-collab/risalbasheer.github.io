@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Risal Basheer - Cybersecurity Portfolio">
+  <title>Risal Basheer | Cybersecurity</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Consolas,Monaco,"Courier New",monospace;
+      background:#050805;color:#d9ffd9;line-height:1.7;
+      overflow-x:hidden;
+    }
+    body:before{
+      content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;
+      background:linear-gradient(rgba(0,255,100,.25) 1px,transparent 1px),
+                 linear-gradient(90deg,rgba(0,255,100,.25) 1px,transparent 1px);
+      background-size:35px 35px;z-index:-1;
+    }
+    .nav{
+      position:fixed;top:0;width:100%;z-index:10;
+      background:rgba(5,8,5,.92);border-bottom:1px solid #164d25;
+      backdrop-filter:blur(8px);
+    }
+    .nav-inner{max-width:1100px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}
+    .logo{color:#39ff6a;font-weight:bold;text-decoration:none;font-size:20px}
+    .logo span{color:#8aff9f}
+    .nav a{color:#b9e8c0;text-decoration:none;margin-left:18px;font-size:14px}
+    .nav a:hover{color:#39ff6a}
+    .hero{
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:100px 20px 60px;
+    }
+    .terminal{
+      width:min(900px,100%);border:1px solid #1d7a36;border-radius:12px;
+      background:rgba(4,10,5,.88);box-shadow:0 0 35px rgba(0,255,80,.08);
+      overflow:hidden;text-align:left;
+    }
+    .bar{padding:10px 15px;background:#0b160d;border-bottom:1px solid #164d25;color:#65ff84}
+    .dots{letter-spacing:5px}
+    .terminal-body{padding:42px}
+    .prompt{color:#39ff6a}
+    h1{font-size:clamp(38px,7vw,76px);color:#f0fff1;margin:8px 0}
+    .tag{font-size:clamp(16px,3vw,24px);color:#39ff6a}
+    .cursor{display:inline-block;width:10px;height:1em;background:#39ff6a;vertical-align:-2px;animation:blink 1s infinite}
+    @keyframes blink{50%{opacity:0}}
+    .hero-buttons{margin-top:28px}
+    .btn{
+      display:inline-block;padding:11px 18px;border:1px solid #39ff6a;
+      color:#39ff6a;text-decoration:none;margin:6px;border-radius:6px;
+      transition:.2s
+    }
+    .btn:hover{background:#39ff6a;color:#061006;box-shadow:0 0 20px rgba(57,255,106,.25)}
+    section{max-width:1100px;margin:auto;padding:90px 22px}
+    .section-title{color:#39ff6a;font-size:27px;margin-bottom:28px}
+    .section-title:before{content:"./";color:#79ff95}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .card{
+      border:1px solid #164d25;background:#081009;border-radius:10px;padding:24px;
+    }
+    .card:hover{border-color:#39ff6a}
+    .card h3{color:#8aff9f;margin-bottom:10px}
+    .muted{color:#91b596}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{border:1px solid #216b31;padding:8px 12px;border-radius:5px;color:#8aff9f;background:#071008}
+    .project-code{color:#39ff6a;margin-bottom:8px}
+    .contact a{color:#39ff6a}
+    footer{text-align:center;padding:30px 20px;border-top:1px solid #164d25;color:#64856b}
+    @media(max-width:700px){
+      .nav-inner{display:block;text-align:center}.nav{position:absolute}.nav a{display:inline-block;margin:8px 7px 0}
+      .terminal-body{padding:28px 20px}.grid{grid-template-columns:1fr}section{padding:70px 18px}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#home">&gt;_ <span>Risal Basheer</span></a>
+    <div>
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="terminal">
+    <div class="bar"><span class="dots">● ● ●</span></div>
+    <div class="terminal-body">
+      <div><span class="prompt">risal@cyber:~$</span> whoami</div>
+      <h1>Risal Basheer</h1>
+      <div class="tag">Cybersecurity Enthusiast<span class="cursor"></span></div>
+      <p class="muted" style="margin-top:18px">
+        Learning cybersecurity, networking and ethical security practices
+        one step at a time.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn" href="#projects">./view-projects</a>
+        <a class="btn" href="#contact">./contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">about-me</h2>
+  <div class="card">
+    <p>
+      Hello, I'm <strong style="color:#39ff6a">Risal Basheer</strong>.
+      I am building my foundation in cybersecurity with a strong interest in
+      networking, Linux, web security and ethical hacking. This portfolio
+      documents my learning journey and practical projects.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">skills</h2>
+  <div class="skills">
+    <span class="skill">Networking</span>
+    <span class="skill">TCP/IP</span>
+    <span class="skill">DNS</span>
+    <span class="skill">ARP</span>
+    <span class="skill">DHCP</span>
+    <span class="skill">NAT</span>
+    <span class="skill">Linux</span>
+    <span class="skill">Kali Linux</span>
+    <span class="skill">Wireshark</span>
+    <span class="skill">Cybersecurity Fundamentals</span>
+    <span class="skill">HTML & CSS</span>
+    <span class="skill">Git & GitHub</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">projects</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="project-code">01 // Network Analysis</div>
+      <h3>Wireshark Lab</h3>
+      <p class="muted">Learning to capture and understand network packets, protocols and traffic patterns.</p>
+    </div>
+    <div class="card">
+      <div class="project-code">02 // Security Lab</div>
+      <h3>Cybersecurity Practice Lab</h3>
+      <p class="muted">Hands-on practice with security concepts in a controlled learning environment.</p>
+    </div>
+    <div class="card">
+      <div class="project-code">03 // Web</div>
+      <h3>Personal Portfolio</h3>
+      <p class="muted">This website — built with HTML and CSS and hosted using free web hosting.</p>
+    </div>
+    <div class="card">
+      <div class="project-code">04 // Learning</div>
+      <h3>Cybersecurity Day Log</h3>
+      <p class="muted">Tracking cybersecurity learning from networking fundamentals toward practical security skills.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="section-title">education</h2>
+  <div class="card">
+    <h3>Cybersecurity Diploma</h3>
+    <p class="muted">Cybersecurity studies and practical learning</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">contact</h2>
+  <div class="card contact">
+    <p class="muted">Replace the placeholders below with your own contact details before publishing.</p>
+    <p style="margin-top:15px">Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourusername</a></p>
+    <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@yourusername</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Risal Basheer · Built with HTML & CSS · <span style="color:#39ff6a">Stay curious. Stay secure.</span></p>
+</footer>
+
+</body>
+</html>
